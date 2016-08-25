@@ -1,4 +1,8 @@
 # Moves all configuration files to their respective directory
 
-# Handles .vimrc file
+# Vim
 cp .vimrc ~
+
+# i3
+mkdir ~/.i3/
+cp .i3/config ~/.i3

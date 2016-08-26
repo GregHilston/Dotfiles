@@ -36,6 +36,9 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# start networking manager
+exec --no-startup-id nm-applet
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -61,7 +64,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+Shift+v split h
 
 # split in vertical orientation
 bindsym $mod+v split v

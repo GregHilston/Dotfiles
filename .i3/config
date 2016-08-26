@@ -8,6 +8,7 @@
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# Use xev to catch keyboard controls
 
 set $mod Mod1
 
@@ -68,6 +69,32 @@ bindsym $mod+Shift+v split h
 
 # split in vertical orientation
 bindsym $mod+v split v
+
+# restarting, reloading and quiting i3
+# bindsym $mod+Shift+r restart
+bindsym $mod+Shift+w reload
+# bindsym $mod+Shift+e exit
+
+# handles function keys for X201 Thinkpad
+
+# Pulse Audio controls
+
+# increase sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+
+# decrease sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+
+# mute sound
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
+# Sreen brightness controls
+
+# increase screen brightness
+bindsym XF86MonBrightnessUp exec ~/.i3/brightness + 500 
+
+# decrease screen brightness
+bindsym XF86MonBrightnessDown exec ~/.i3/brightness - 500
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen

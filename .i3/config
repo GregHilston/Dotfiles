@@ -4,12 +4,18 @@
 # Should you change your keyboard layout somewhen, delete
 # this file and re-run i3-config-wizard(1).
 #
+
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
-# Use xev to catch keyboard controls
 
-set $mod Mod4
+# Sets mod key
+# Note Mod1 == alt
+set $mod Mod1
+
+# Sets sup key
+# Note Mod4 == win (super)
+set $sup Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -36,9 +42,6 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# start networking manager
-exec --no-startup-id nm-applet
-
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -64,42 +67,16 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+Shift+v split h
+bindsym $mod+s split h
 
 # split in vertical orientation
 bindsym $mod+v split v
-
-# restarting, reloading and quiting i3
-# bindsym $mod+Shift+r restart
-bindsym $mod+Shift+w reload
-# bindsym $mod+Shift+e exit
-
-# handles function keys for X201 Thinkpad
-
-# Pulse Audio controls
-
-# increase sound volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-
-# decrease sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-
-# mute sound
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
-
-# Sreen brightness controls
-
-# increase screen brightness
-bindsym XF86MonBrightnessUp exec ~/.i3/brightness + 500
-
-# decrease screen brightness
-bindsym XF86MonBrightnessDown exec ~/.i3/brightness - 500
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+bindsym $mod+t layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -177,3 +154,5 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+exec-always nm-applet

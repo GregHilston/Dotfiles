@@ -3,6 +3,9 @@
 # Vim
 cp .vimrc ~
 
+# Z Shell
+cp .zshrc ~
+
 # i3
 mkdir ~/.i3/
 cp .i3/config ~/.i3

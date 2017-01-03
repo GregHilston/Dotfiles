@@ -72,11 +72,6 @@ bindsym $mod+s split h
 # split in vertical orientation
 bindsym $mod+v split v
 
-# restarting, reloading and quiting i3
-# bindsym $mod+Shift+r restart
-bindsym $mod+Shift+w reload
-# bindsym $mod+Shift+e exit
-
 # handles function keys for X201 Thinkpad
 
 # Pulse Audio controls

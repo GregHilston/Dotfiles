@@ -29,7 +29,7 @@ setopt correctall
 # Enables autocd (for example /etc instead of cd /etc)
 setopt autocd
 
-# some more ls aliases
+# some ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'

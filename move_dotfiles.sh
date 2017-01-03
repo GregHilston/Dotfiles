@@ -7,5 +7,5 @@ cp .vimrc ~
 cp .zshrc ~
 
 # i3
-mkdir ~/.i3/
+mkdir -p ~/.i3/
 cp .i3/config ~/.i3

@@ -5,7 +5,7 @@ SAVEHIST=10000
 setopt beep
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
-bindkey -v
+bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/ghilston/.zshrc'
@@ -33,3 +33,7 @@ setopt autocd
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# Matching history search
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward

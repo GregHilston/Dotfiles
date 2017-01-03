@@ -17,7 +17,8 @@ compinit
 
 
 # Sets up our terminal prompt see https://wiki.gentoo.org/wiki/Zsh/Guide#Prompts
-export PS1="[%M] %d %% "
+export PS1="%B[%M] %n %d %% %b
+"
 
 # Improving completion style
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'

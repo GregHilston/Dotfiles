@@ -34,7 +34,7 @@ setopt autocd
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias i3lock ='i3lock -d -c 000000'
+alias i3lock='i3lock -d -c 000000'
 
 # Matching history search
 bindkey "^[[A" history-beginning-search-backward

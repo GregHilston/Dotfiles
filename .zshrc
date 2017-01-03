@@ -39,3 +39,6 @@ alias i3lock ='i3lock -d -c 000000'
 # Matching history search
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+
+# Get virtual env wrapper to work
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh

@@ -137,6 +137,9 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# Gnome / Windows style locking
+bindsym Control+Alt+l exec i3lock -d -c 000000
+
 # reload the configuration file
 bindsym $mod+Shift+r reload
 

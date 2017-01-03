@@ -30,10 +30,11 @@ setopt correctall
 # Enables autocd (for example /etc instead of cd /etc)
 setopt autocd
 
-# some ls aliases
+# some aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias i3lock ='i3lock -d -c 000000'
 
 # Matching history search
 bindkey "^[[A" history-beginning-search-backward
